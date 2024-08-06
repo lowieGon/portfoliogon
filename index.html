@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>LOUIE</h1>
+          <hr>
+          <p>Programming • Server Management • Networks • CISCO</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">About</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About Me</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="img/POGI.jpg" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>Greetings! I am John Louie B. Gonzales, pursuing a Bachelor of Science in Computer Engineering at the Pollytechnic University of the Philippines. I am eager to contribute my skills and knowledge to the ever-evolving field of computer engineering.</p>
+          <p>I welcome any inquiries, collaboration opportunities, or discussions related to my academic and professional endeavors. Feel free to drop me a message, and I'll get back to you as soon as possible. You can contact me via my my personal email at gonzales.louie12301@gmail.com.</p>
+          <p>Looking forward to connecting with you</p>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".prelim">OJT</a></li>
+            <li><a href="#" data-filter=".midterm">FIRST SEMESTER</a></li>
+            <li><a href="#" data-filter=".finals">SECOND  </a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://www.jaehubservices.com/" onclick="toggleDescription(event, 1)">
+                <div class="hover-text">
+                  <h4>HOA 1</h4>
+                  <p id="description-1" style="display: none;">Creating Virtual Machines</p>
+                  <button id="seeBtn-1" style="display: none;" onclick="redirectToGitHub('https://www.jaehubservices.com/')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-1.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://pinasmarket.com/Admin/Product/List" onclick="toggleDescription(event, 6)">
+                <div class="hover-text">
+                  <h4>HOA 6</h4>
+                  <p id="description-6" style="display: none;">Targeting Specific Nodes</p>
+                  <button id="seeBtn-6" style="display: none;" onclick="window.open('https://pinasmarket.com/Admin/Product/List')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-6.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 11)">
+                <div class="hover-text">
+                  <h4>HOA 11</h4>
+                  <p id="description-11" style="display: none;">Containerization</p>
+                  <button id="seeBtn-11" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-11.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 2)">
+                <div class="hover-text">
+                  <h4>HOA 2</h4>
+                  <p id="description-2" style="display: none;">SSH Key-Based Authentication and GIT Setup</p>
+                  <button id="seeBtn-2" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-2.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 7)">
+                <div class="hover-text">
+                  <h4>HOA 7</h4>
+                  <p id="description-7" style="display: none;">Managing Files and Creating Roles in Ansible</p>
+                  <button id="seeBtn-7" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-7.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 12)">
+                <div class="hover-text">
+                  <h4>HOA 12</h4>
+                  <p id="description-12" style="display: none;">Build a Sample Web App in a Docker Container</p>
+                  <button id="seeBtn-12" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-12.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 3)">
+                <div class="hover-text">
+                  <h4>HOA 3</h4>
+                  <p id="description-3" style="display: none;">Install SSH server on CentOS or RHEL 8</p>
+                  <button id="seeBtn-3" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-3.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 8)">
+                <div class="hover-text">
+                  <h4>HOA 8</h4>
+                  <p id="description-8" style="display: none;">Install, Configure, Manage Enterprise Availability Monitoring(Ansible)</p>
+                  <button id="seeBtn-8" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-8.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>   
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 13)">
+                <div class="hover-text">
+                  <h4>HOA 13</h4>
+                  <p id="description-13" style="display: none;">OpenStack Prerequisite Installation</p>
+                  <button id="seeBtn-13" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-13.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 4)">
+                <div class="hover-text">
+                  <h4>HOA 4</h4>
+                  <p id="description-4" style="display: none;">Ansible Basics</p>
+                  <button id="seeBtn-4" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-4.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 9)">
+                <div class="hover-text">
+                  <h4>HOA 9</h4>
+                  <p id="description-9" style="display: none;">Install, Configur, Manage Enterprise Performance Monitoring(Ansible)</p>
+                  <button id="seeBtn-9" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-9.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 14)">
+                <div class="hover-text">
+                  <h4>HOA 14</h4>
+                  <p id="description-14" style="display: none;">OpenStack Installation (Keystone, Glance, Nova)</p>
+                  <button id="seeBtn-14" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-14.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 5)">
+                <div class="hover-text">
+                  <h4>HOA 5</h4>
+                  <p id="description-5" style="display: none;">Implement Ansible roles in playbooks</p>
+                  <button id="seeBtn-5" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-5.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 10)">
+                <div class="hover-text">
+                  <h4>HOA 10</h4>
+                  <p id="description-10" style="display: none;">Install, Configure, Manage Enterprise Log Monitoring(Ansible)</p>
+                  <button id="seeBtn-10" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-10.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 15)">
+                <div class="hover-text">
+                  <h4>HOA 15</h4>
+                  <p id="description-15" style="display: none;">OpenStack Installation (Neutron, Horizon, Cinder)</p>
+                  <button id="seeBtn-15" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-15.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 prelim">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 16)">
+                <div class="hover-text">
+                  <h4>Prelim Exam</h4>
+                  <p id="description-16" style="display: none;">Ansible playbook(Install python3, pip3,Java open-jdk)</p>
+                  <button id="seeBtn-16" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-16.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 midterm">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 17)">
+                <div class="hover-text">
+                  <h4>Midterm Exam</h4>
+                  <p id="description-17" style="display: none;">Install, Configure, and Manage Log Monitoring tools</p>
+                  <button id="seeBtn-17" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-17.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 finals">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <a href="https://github.com/lowieGon/assign1-3" onclick="toggleDescription(event, 18)">
+                <div class="hover-text">
+                  <h4>Final Exam</h4>
+                  <p id="description-18" style="display: none;">Website Portfolio</p>
+                  <button id="seeBtn-18" style="display: none;" onclick="window.open('https://github.com/lowieGon/nega')">See</button>
+                </div>
+                <img src="img/portfolio/HOA-18.jpg" class="img-responsive" alt="Project Title">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Learnings Section -->
+<section id="learnings">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Learnings</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>This training in elective networks, particularly through Cisco's Networking Academy, provides specialized instruction
+           that equips students with essential networking skills and knowledge for careers in information technology. 
+           The curriculum encompasses fundamental concepts such as local area networks (LANs), network devices, protocols, and security, 
+           while placing a strong emphasis on hands-on learning through simulations and practical exercises. Cisco's courses, especially 
+           the CCNA series, are designed to prepare learners for entry-level positions and globally recognized certifications, thereby 
+           enhancing their employability in a competitive job market. This course has imparted valuable insights and skills, including the 
+           development of workflows utilizing Infrastructure as Code, testing in real enterprise environments, and service enhancement. 
+           Key modules addressed topics such as configuring networks via virtual machines, SSH configuration using public and private keys, 
+           and the application of Ansible commands for automation. Participants gained hands-on experience in installing and configuring Ansible, 
+           understanding containerization, and employing Ansible within continuous delivery workflows. Overall, this course has been instrumental 
+           in expanding my knowledge and skill set, fostering critical thinking and problem-solving abilities that are essential for success in 
+           the dynamic field of networking.
+
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Get In Touch</h2>
+      <hr>
+    </div>
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/harden.louie13/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://github.com/lowieGon"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1CzBv2EP1SjReBgG5i_yp3FxrYxhWBALh/view?usp=sharing " target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg" style="display: block; margin-top: 20px;">Download CV</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; Magnum. Redesigned by <a href="https://github.com/qsmvelmonte" rel="nofollow">LOUIE GONZALES</a></p>
+    </div>
+  </div>
+  
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
